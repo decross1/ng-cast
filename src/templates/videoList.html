@@ -1,5 +1,9 @@
 <ul class="video-list">
-  <video-list-entry change-video="$ctrl.changeVideo" current-video="videoEntry" index="$index" ng-repeat="videoEntry in $ctrl.videoList track by $index" />
+  <video-list-entry 
+    current-video="videoEntry" 
+    index="$index" 
+    ng-repeat="videoEntry in $ctrl.videoList track by $index" 
+  />
 </ul>
 
 <!-- currentVideo=$videoEntry index=$index ng-repeat="videoEntry in $ctrl.videoList track by $index" -->

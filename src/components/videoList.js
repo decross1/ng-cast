@@ -3,9 +3,12 @@ videoPlayer.component('videoList', {
   bindings: {
     currentVideo: '<',
     videoList: '<',
-    changeVideo: '&'
+    changeVideo: '<'
   },
   controller: function() {
     console.log('videoList', this);
+    this.passIndexUp = () => {
+      this.changeVideo();
+    };
   }
 });

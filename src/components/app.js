@@ -3,13 +3,15 @@ videoPlayer.component('app', {
   bindings: {
     video: '<'
   },
+
   controller: function() {
     this.currentVideo = window.exampleVideoData[0];
     this.videoList = window.exampleVideoData;
-    this.changeVideo = function(index) {
-      this.currentVideo = videoList[index];
-      console.log('changeVideo invoked');
+  
+    this.changeVideo = (index) => {
+      this.currentVideo = window.exampleVideoData[index];
     };
-    console.log('app', this);
   }
+
+  
 });
