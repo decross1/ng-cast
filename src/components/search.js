@@ -3,10 +3,9 @@ videoPlayer.component('search', {
   bindings: {
     newSearch: '<'
   },
-  controller: function(youTube) {
-    this.searchQuery;
+  controller: function(youTube, $scope) {
     this.searchClickHandler = function(searchQuery) {
-      youTube.search('the last jedi').then((data)=> this.newSearch(data));
+      youTube.search(searchQuery).then((data)=> this.newSearch(data));
     };
   },
 
