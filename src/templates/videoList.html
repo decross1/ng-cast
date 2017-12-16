@@ -1,7 +1,5 @@
 <ul class="video-list">
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
+  <video-list-entry change-video="$ctrl.changeVideo" current-video="videoEntry" index="$index" ng-repeat="videoEntry in $ctrl.videoList track by $index" />
 </ul>
+
+<!-- currentVideo=$videoEntry index=$index ng-repeat="videoEntry in $ctrl.videoList track by $index" -->
