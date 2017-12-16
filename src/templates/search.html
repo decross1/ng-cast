@@ -3,8 +3,10 @@
     class="form-control" 
     type="text" 
     ng-model="$ctrl.searchQuery"
-    ng-keyup="$ctrl.searchClickHandler($ctrl.searchQuery)"/>
-  <button class="btn" ng-click="$ctrl.searchClickHandler()">
+    ng-keyup="$ctrl.searchClickHandler($event)"
+    ng-keypress="$event"
+    />
+  <button class="btn" ng-click="$ctrl.searchClickHandler($event)">
     <span class="glyphicon glyphicon-search"></span>
   </button>
 </div>

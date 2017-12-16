@@ -4,8 +4,12 @@ videoPlayer.component('search', {
     newSearch: '<'
   },
   controller: function(youTube, $scope) {
-    this.searchClickHandler = function(searchQuery) {
-      youTube.search(searchQuery).then((data)=> this.newSearch(data));
+    this.searchQuery;
+    this.searchClickHandler = function(e) {
+      youTube.search(this.searchQuery).then((data)=> this.newSearch(data));
+      if (e.key === 'Enter' || e.type === 'click') {
+        this.searchQuery = '';
+      }
     };
   },
 
