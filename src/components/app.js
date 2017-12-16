@@ -11,6 +11,10 @@ videoPlayer.component('app', {
     this.changeVideo = (index) => {
       this.currentVideo = this.videoList[index];
     };
+    
+    this.newSearch = (videoArray) => {
+      this.videoList = videoArray;
+    };
   }
 
   
