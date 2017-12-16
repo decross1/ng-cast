@@ -5,7 +5,8 @@
   <div class="media-body">
     <div 
       class="video-list-entry-title" 
-      ng-click="$ctrl.onClick($ctrl.index)">{{$ctrl.currentVideo.snippet.title}}
+      ng-click="$ctrl.changeVideo($ctrl.index)">{{$ctrl.currentVideo.snippet.title}}
+      
   </div>
     <div class="video-list-entry-detail">{{$ctrl.currentVideo.snippet.description}}</div>
   </div>

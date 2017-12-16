@@ -5,10 +5,8 @@ videoPlayer.component('videoList', {
     videoList: '<',
     changeVideo: '<'
   },
+
   controller: function() {
     console.log('videoList', this);
-    this.passIndexUp = () => {
-      this.changeVideo();
-    };
   }
 });
