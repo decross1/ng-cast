@@ -9,7 +9,7 @@ videoPlayer.component('app', {
     this.videoList = window.exampleVideoData;
   
     this.changeVideo = (index) => {
-      this.currentVideo = window.exampleVideoData[index];
+      this.currentVideo = this.videoList[index];
     };
   }
 

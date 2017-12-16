@@ -4,7 +4,6 @@ videoPlayer.component('videoPlayer', {
     currentVideo: '<'
   },
 
-  controller: function() {
-    let youtube = 'https://www.youtube.com/embed/';
-  }
+  // controller: function() {
+  // }
 });

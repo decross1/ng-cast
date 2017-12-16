@@ -6,7 +6,7 @@ videoPlayer.component('videoList', {
     changeVideo: '<'
   },
 
-  controller: function() {
-    console.log('videoList', this);
-  }
+  // controller: function() {
+  //   console.log('videoList', this);
+  // }
 });

@@ -6,9 +6,9 @@ videoPlayer.component('videoListEntry', {
     changeVideo: '<'
   },
 
-  controller: function() {
-    console.log(this);
-  }
+  // controller: function() {
+  //   console.log(this);
+  // }
 });
 
 //current-video="$videoEntry" index="$index" ng-repeat="videoEntry in $ctrl.videoList track by $index
